@@ -7,6 +7,13 @@
 // text-input:en med id "email" och logga den texten i konsolen med console.log
 // Glöm ej pusha till git
 
+const contactButton = document.getElementById("contact-button");
+
+contactButton.addEventListener("click", () => {
+  const emailInput = document.getElementById("email_input").value;
+  console.log(emailInput);
+});
+
 // 3. Skriv en funktion createParagraph som tar emot en text som parameter.
 // Funktionen ska sedan skapa en <p>-tag med den inskickade texten som värde.
 // Funktionen ska sedan returnera den skapade <p>-taggen.
