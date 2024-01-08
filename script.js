@@ -29,3 +29,10 @@ function createParagraph(text) {
 // anropas - du skickar med värdet i phone och p-taggen som returneras ska
 // skrivas till console.log
 // Glöm ej pusha till git
+
+let phoneInput = document.getElementById("phone_input");
+
+phoneInput.addEventListener("change", () => {
+  let phoneInputValue = document.getElementById("phone_input").value;
+  console.log(createParagraph(phoneInputValue));
+});
